@@ -16,8 +16,8 @@ jobs:
           python-version: 3.9
       - name: setup git
         run: |
-          git config --global user.email "actions@fcc.ca"
-          git config --global user.name "github actions"
+          git config --global user.email "adam.gong@fcc-fac.ca"
+          git config --global user.name "Adam Gong"
       - name: calculate diff
         run: |
           python image-delta.py
