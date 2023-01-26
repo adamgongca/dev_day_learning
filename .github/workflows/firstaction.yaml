@@ -3,12 +3,3 @@ name: first-action
 on: push
 ```
 
-```
-jobs:
-  echo:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: echo text
-        run: echo "Job ran successfully"
-```
