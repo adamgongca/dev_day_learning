@@ -25,7 +25,6 @@ def write_manifest(diff: list[str]):
     print("Building manifest file")
     with open("./manifest.txt", "w") as file:
         if not diff:
-            file.write("==adam test===")
             return
         for folder in diff:
             file.write(f"{folder}\n")
@@ -43,8 +42,8 @@ def commit():
     print(f"Needs to push: {should_push}")
 
     if should_push:
-        subprocess.run(["git", "push"])
-
+         push_status = subprocess.run(["git", "push"], capture_output=True,text=True,)
+         print(line) for line in push_status.stdout.split(linesep)
 
 def main():
     diff = get_diff()
