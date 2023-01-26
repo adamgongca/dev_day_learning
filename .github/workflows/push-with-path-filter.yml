@@ -1,0 +1,12 @@
+---
+name: push-with-path-filter
+on:
+  push:
+    paths:
+      - "**.py"
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo text
+        run: echo "Job ran successfully "
