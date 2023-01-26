@@ -43,7 +43,7 @@ def commit():
 
     if should_push:
          push_status = subprocess.run(["git", "push"], capture_output=True,text=True,)
-         print(push_status.stdout.split(linesep))
+         print(push_status)
 
 def main():
     diff = get_diff()
