@@ -1,0 +1,14 @@
+---
+name: push-with-multiple-filters
+on:
+  push:
+    branches-ignore:
+      - release
+    paths:
+      - "**.py"
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo text
+        run: echo "Job ran successfully "
