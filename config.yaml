@@ -4,7 +4,6 @@
 - name: should also pass
   id: 5
   debug: true
-- name: 24
-  id: test
-  debug: 5
-  debg: true
+- name: test
+  id: 24
+  debug: true
