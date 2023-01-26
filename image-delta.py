@@ -25,6 +25,7 @@ def write_manifest(diff: list[str]):
     print("Building manifest file")
     with open("./manifest.txt", "w") as file:
         if not diff:
+            file.write("==adam test===")
             return
         for folder in diff:
             file.write(f"{folder}\n")
